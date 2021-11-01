@@ -1,0 +1,43 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  user_id: 1
+  object: MyText
+  company: MyText
+  consumer: MyText
+  costomer: MyText
+  competitor: MyText
+  community: MyText
+  st: MyString
+  pp1: MyString
+  pp2: MyString
+  pp3: MyString
+  kenzai: MyText
+  senzai: MyText
+  insight: MyText
+  what: MyString
+  how1: MyText
+  how2: MyText
+  how3: MyText
+  explanation: MyText
+
+two:
+  user_id: 1
+  object: MyText
+  company: MyText
+  consumer: MyText
+  costomer: MyText
+  competitor: MyText
+  community: MyText
+  st: MyString
+  pp1: MyString
+  pp2: MyString
+  pp3: MyString
+  kenzai: MyText
+  senzai: MyText
+  insight: MyText
+  what: MyString
+  how1: MyText
+  how2: MyText
+  how3: MyText
+  explanation: MyText

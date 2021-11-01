@@ -1,0 +1,111 @@
+<section class="hero is-success">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        戦略詳細
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="pre-about">
+<div class="edit">
+<% if @marketing.user.id == current_user.id %>
+<%= link_to "編集画面へ", edit_marketing_path(@marketing), class: "button is-success" %>
+<% end %>
+</div>
+<h2><%= link_to @marketing.user.username,user_path(@marketing.user) %>さんの戦略</h2><h3>戦況分析</h3>
+<div class="about-text">
+<h4>自社の理解</h4>
+<p><%= @marketing.company %></p>
+</div>
+<div class="about-border"></div>
+<div class="about-text">
+<h4>消費者の理解</h4>
+<p><%=@marketing.consumer %></p>
+</div>
+<div class="about-border"></div>
+<div class="about-text">
+<h4>中間顧客の理解</h4>
+<p><%= @marketing.costomer %></p>
+</div>
+<div class="about-border"></div>
+<div class="about-text">
+<h4>競合する他社の理解</h4>
+<p><%=@marketing.competitor %></p>
+</div>
+<div class="about-border"></div>
+<div class="about-text">
+<h4>ビジネスを取り巻く環境の理解</h4>
+<p><%=@marketing.community %></p>
+</div>
+<div class="about-border"></div>
+</section>
+
+<section class="pickup">
+<div class="tile is-ancestor">
+<div class="column is-three-fifths is-offset-one-fifth">
+<div class="tile is-12 is-vertical is-parent">
+<div class="tile is-child box">
+<p class="title">目的</p>
+<p><%= @marketing.object %></p>
+</div>
+<div class="tile is-child box">
+        <p class="title">WHO</p>
+        <p>ST:   <%= @marketing.st %><br>
+        PP1:   <%= @marketing.pp1 %><br>
+        PP2:   <%= @marketing.pp2 %><br>
+        PP3:   <%= @marketing.pp3 %></p>
+ </div>
+</div>
+<div class="columns">
+  <div class="column is-half">
+  <div class="tile is-parent ">
+  <div class="tile is-child box">
+   <p class="title" style="font-size:25px;">顕在ニーズ</p>
+        <p><%= @marketing.kenzai %></p>
+    </div>
+  </div>
+  </div>
+  <div class="column">
+  <div class="tile is-parent ">
+  <div class="tile is-child box">
+        <p class="title" style="font-size:25px;">潜在ニーズ</p>
+        <p><%= @marketing.senzai %></p>
+   </div>
+  </div>
+ </div>
+</div>
+<div class="tile is-ancestor">
+<div class="tile is-12 is-vertical is-parent">
+<div class="tile is-child box">
+<p class="title" style="font-size:25px;">インサイト</p>
+<p><%= @marketing.insight %></p>
+</div>
+<div class="tile is-child box">
+        <p class="title" style="font-size:25px;">WHAT</p>
+        <p><%= @marketing.what %></p>
+ </div>
+<div class="tile is-child box">
+        <p class="title" style="font-size:25px;">HOW（プラン１）</p>
+        <p><%= @marketing.how1 %></p>
+ </div>
+ <div class="tile is-child box">
+        <p class="title" style="font-size:25px;">HOW（プラン２）</p>
+        <p><%= @marketing.how2 %></p>
+ </div>
+ <div class="tile is-child box">
+        <p class="title" style="font-size:25px;">HOW（プラン３）</p>
+        <p><%= @marketing.how3 %></p>
+ </div>
+ <div class="tile is-child box">
+        <p class="title" style="font-size:25px;">想いや懸念点など</p>
+        <p><%= @marketing.explanation %></p>
+ </div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</section>

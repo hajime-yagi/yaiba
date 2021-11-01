@@ -1,0 +1,109 @@
+<section class="hero is-success">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+       戦略編集
+      </h1>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-6">
+      <h2>戦況分析</h2>
+        <%= form_for @marketing do |f| %>
+          <%= render 'shared/error_messages', object: f.object %>
+          <div class="field">
+            <%= f.label :company, "自社の理解", class: "label" %>
+            <%= f.text_area :company, size: "70x5",class: "large" %>
+          </div>
+          <div class="field">
+            <%= f.label :consumer, "消費者の理解", class: "label" %>
+            <%= f.text_area :consumer, class: "input" %>
+          </div>
+          <div class="field">
+            <%= f.label :costomer, "中間顧客の理解", class: "label" %>
+            <%= f.text_area :costomer, class: "input" %>
+          </div>
+          <div class="field">
+            <%= f.label :competitor, "競合する他社の理解", class: "label" %>
+            <%= f.text_area :competitor, class: "input" %>
+          </div>
+          <div class="field">
+            <%= f.label :community, "ビジネスを取り巻く環境の理解", class: "label" %>
+            <%= f.text_area :community, class: "input" %>
+          </div>
+          <br>
+          <br>
+          <h2>戦略</h2>
+          <div class="field">
+            <%= f.label :object, "目的", class: "label" %>
+            <%= f.text_field :object, class: "input" %>
+          </div>
+          <h2>WHO</h2>
+          <div class="field">
+            <%= f.label :st, "ST", class: "label" %>
+            <%= f.text_field :st, class: "input" %>
+          </div>
+
+          <div class="field">
+            <%= f.label :pp1, "PP1", class: "label" %>
+            <%= f.text_field :pp1, class: "input" %>
+          </div>
+          <div class="field">
+            <%= f.label :pp2, "PP2", class: "label" %>
+            <%= f.text_field :pp2, class: "input" %>
+          </div>
+          <div class="field">
+            <%= f.label :pp3, "pp3", class: "label" %>
+            <%= f.text_field :pp3, class: "input" %>
+          </div>
+          <div class="field">
+          <%= f.label :kenzai, "顕在ニーズ", class: "label" %>
+          <%= f.text_area :kenzai, class: "input" %>
+        </div>
+        <div class="field">
+          <%= f.label :senzai, "潜在ニーズ", class: "label" %>
+          <%= f.text_area :senzai, class: "input" %>
+        </div>
+        <div class="field">
+          <%= f.label :insight, "インサイト", class: "label" %>
+          <%= f.text_area :insight, class: "input" %>
+        </div>
+        <h2>WHAT</h2>
+        <div class="field">
+        <%= f.label :what, "真の価値", class: "label" %>
+        <%= f.text_field :what, class: "input" %>
+      </div>
+      <h2>HOW</h2>
+      <div class="field">
+      <%= f.label :how1, "プラン１", class: "label" %>
+      <%= f.text_area :how1, class: "input" %>
+    </div>
+    <div class="field">
+      <%= f.label :how2, "プラン２", class: "label" %>
+      <%= f.text_area :how2, class: "input" %>
+    </div>
+    <div class="field">
+      <%= f.label :how3, "プラン３", class: "label" %>
+      <%= f.text_area :how3, class: "input" %>
+    </div>
+
+    <div class="field">
+      <%= f.label :explanation, "想いや懸念点等", class: "label" %>
+      <%= f.text_area :explanation, class: "input" %>
+    </div>
+          <%= f.submit '投稿', class: "button is-success" %>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+
+

@@ -1,0 +1,97 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+ @import "bulma";
+
+ .notification:not(:last-child){
+	margin-bottom: 0;
+}
+.img {
+  width: 96px;
+  height: 65px;
+  }
+ 
+ .main-image {
+   height: 940px;
+   background-image: url(main.jpeg);
+   background-repeat: no-repeat;
+   background-size: contain;
+ }
+ .pre-about {
+ 
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 60px 0;
+}
+.pre-about h2 {
+  text-align: center;
+  font-size: 40px;
+  color:#67aaddd7;
+  padding-top: 5%;
+
+}
+.pre-about h3 {
+  text-align: center;
+  font-size: 25px;
+  padding-top: 6%;
+  padding-bottom: 8%;
+  color: #585656d2;
+}
+.about-text h4 {
+  font-size: 25px;
+  padding-top: 6%;
+  padding-bottom: 6%;
+  color:#50a8eb;
+  text-align: center;
+}
+.about-text p {
+  font-size: 15px;
+  line-height: 25px;
+  padding-bottom: 5%;
+  color: #5e5c5cb7;
+  text-align: center;
+}
+.about-border {
+  border-bottom: 1px solid #8f9191b4;
+}
+.edit {
+  text-align: right;
+  padding:5% 3% 0 0;
+}
+.pickup {
+  background-color: rgba(155, 212, 236, 0.548);
+  padding-top: 2%;
+  padding-bottom: 100px;
+}
+.pickup h2 {
+  text-align: center;
+  font-size: 30px;
+}
+.pickup h3 {
+  padding:3% 0 0 0;
+  text-align: center;
+}
+.tile {
+  text-align: center;
+}
+.title {
+  text-align: center;
+}
+.tile p{
+  text-align: center;
+  word-wrap: break-word;
+}
+
