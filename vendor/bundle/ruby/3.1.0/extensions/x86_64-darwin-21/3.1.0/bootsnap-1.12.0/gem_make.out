@@ -1,0 +1,15 @@
+current directory: /Users/hajime/Desktop/yaiba/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+/Users/hajime/.rbenv/versions/3.1.2/bin/ruby -I /Users/hajime/.rbenv/versions/3.1.2/lib/ruby/3.1.0 -r ./siteconf20220702-47304-fiify9.rb extconf.rb
+creating Makefile
+
+current directory: /Users/hajime/Desktop/yaiba/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= clean
+
+current directory: /Users/hajime/Desktop/yaiba/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\=
+compiling bootsnap.c
+linking shared-object bootsnap/bootsnap.bundle
+
+current directory: /Users/hajime/Desktop/yaiba/vendor/bundle/ruby/3.1.0/gems/bootsnap-1.12.0/ext/bootsnap
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 bootsnap.bundle ./.gem.20220702-47304-d4bow1/bootsnap
